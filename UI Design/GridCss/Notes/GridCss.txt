@@ -1,0 +1,5 @@
+box-sizing: border-box; // Width, height, padding, border all are included in width and height.
+            content-box; // Border and padding are not included.
+            initial; // Sets the default value.
+            inherit; // inherit it's parent
+
