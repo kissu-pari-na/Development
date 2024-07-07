@@ -6,8 +6,53 @@
 
 .container{
     border: 2px solid red;
+    display: grid;
+    gap: 10px;
+    row-gap: 10px;
+    column-gap: 20px;
+    /*grid-template-columns: repeat(2, 1fr) 2fr;*/
+    /*grid-template-columns: repeat(auto-fill, 100px); */
+    /*grid-template-columns: repeat(2, 1fr) 200px;*/
+    /*grid-template-columns: 200px auto auto;*/
+    /*grid-template-rows: 200px 80px;*/
+    /*grid-auto-rows: 150px;*/ /* Which row's height are not defined will get this height */
+    /*justify-content: center; /* Others are: start, end, space-around, space-between, space-evenly*/
+    /*align-content: center;*/
+    height: 100vh;
+    /*justify-items: center;*/
+    /*align-items: center;*/
+    grid-template-areas:    "header header header header"
+                            "sbar mainc mainc mainc"
+                            "sbar mainc mainc mainc"
+                            "sbar mainc mainc mainc"
+                            "footer footer footer footer";
 }
 .box{
     border: 2px solid green;
     padding: 12px;
+}
+
+#box-1 {
+    background-color: blueviolet;
+    /*justify-self: start; /* Default value is 'stretch' */
+    grid-area: header;
+}
+
+#box-2 {
+    background-color: rgb(98, 47, 146);
+    /*justify-self: start;
+    align-self: end;*/
+    /*grid-column-start: 2;
+    grid-column-end: 4;*/
+    /*grid-column: 2 / span 3;*/
+    /*grid-column: 2 / -1; /* -1 means the last column */
+    /*grid-row: 1 / 4;
+    grid-area: 1 / 2 / 3 / -1;*/
+    grid-area: sbar;
+}
+#box-3{
+    grid-area: mainc;
+}
+#box-4{
+    grid-area: footer;
 }
