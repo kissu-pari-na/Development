@@ -1,0 +1,21 @@
+1. Object oriented:
+	i. interface vs abstract class
+
+Object Oriented core concepts:
+	i. inheritance - disadvantage, inheritance 'is a relationship' not 'has a relationship'. Static constructor vs non static constructor
+is Multiple inheritance possible?
+	ii. polymorphism
+	iii. Abstraction
+	iv. Encapsulation
+
+2. Primitive type, reference type memory allocation.
+3. What happen when we run a dotnet program.
+4. Dotnet memory management.
+5. Layered, Onion, Clean Architecture - benefits
+6. Entity Framework
+7. ACID properties
+8. dotnet attribute
+9. Extension method
+10. Reflection in dotnet
+11. use of Params keyword
+12. CI/CD pipeline
